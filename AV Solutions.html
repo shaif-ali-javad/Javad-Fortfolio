@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Office Automation.css">
+</head>
+<body>
+    <header class="nav-links" id="navLinks">
+        <a href="home.html" class="logo">OneTech</a>
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a class="home" href="home.html">Home</a></li>
+            <li><a class="effect" href="about us.html">About</a></li>
+            <li><a class="effect" href="sevices.html">Services</a></li>
+            <li><a class="effect" href="contact us.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+    </section>
+    <aside>
+        <ul>
+            <li>Office Automation</li>
+            <li>Software Solutions</li>
+            <li>AV Solutions</li>
+            <li>Structured Cabling</li>
+            <li>ELV Systems</li>
+            <li>Backup and Disaster Recovery Management</li>
+            <li>Home Automation</li>
+            <li>Cloud Services</li>
+            <li>Maintenance & Support</li>
+            <li>AI Based Solutions</li>
+            <li>Data Centre Solutions</li>
+            <li>Microsoft Azure / Office 365</li>
+        </ul>
+    </aside>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+    </script>
+</body>
+</html>

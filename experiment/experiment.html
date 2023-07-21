@@ -1,0 +1,300 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<style>
+.slider {
+  width: 100%;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slides input[type="radio"] {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 100%; /* Ensure each slide takes up the full width */
+  height: 100%;
+  transition: opacity 1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#radio0:checked ~ .slides .slide:nth-child(1),
+#radio1:checked ~ .slides .slide:nth-child(2),
+#radio2:checked ~ .slides .slide:nth-child(3),
+#radio3:checked ~ .slides .slide:nth-child(4) {
+  opacity: 1;
+}
+
+.head-line {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+}
+</style>
+</head>
+<body>
+
+<section class="banner">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio0" checked>
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            
+            <div class="slide">
+                <img src="https://www.shutterstock.com/image-illustration/3d-futuristic-circuit-background-motion-600w-1675260034.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://www.shutterstock.com/image-illustration/3d-futuristic-abstract-background-motion-600w-1665438742.jpg" alt="image 2">
+            </div>
+            <div class="slide">
+                <img src="https://www.shutterstock.com/image-illustration/network-technology-background-600w-1327345370.jpg" alt="image 3">
+            </div>
+            <div class="slide">
+                <img src="https://www.shutterstock.com/image-vector/geometric-gear-pattern-digital-circle-600w-2178817297.jpg" alt="image 4">
+            </div>
+        </div>
+    </div>
+    <h1 class="head-line">OneTech</h1>
+    <p class="head-line">Welcome to OneTech</p>
+</section>
+
+</body>
+</html>
+-->
+<!--
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section {
+  position: relative;
+  max-width: 920px;
+  min-height: 75vh;
+  padding: 40px;
+  margin: auto;
+  background-color: #48c9b0;
+  color: #ffffff;
+}
+.section.bg-static {
+  background-color: #85c1e9;
+  background-image: url(https://webmadewell.com/wp-content/uploads/2018/07/img-blog-background-move-scrolling-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.section .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  background-image: url(https://webmadewell.com/wp-content/uploads/2018/07/img-blog-background-move-scrolling-boat.png);
+  background-size: cover;
+  background-position: center;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="section">
+  Scroll down to see the effect
+</div>
+<div class="section bg-static">
+  <div class="bg-move"></div>
+</div>
+<div class="section">
+  The boat image is moving only when scrolling. 
+</div>
+
+<script>
+$(window).on('load resize scroll', function() {
+  $('.bg-static').each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop - elementTop;
+    $(this)
+      .find('.bg-move')
+      .css({ left: leftPosition });
+  });
+});
+</script>
+</body>
+</html>
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  </head>
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .mySlides {
+      display: none;
+    }
+  
+    .slideshow-container {
+      max-width: 1400px;
+      position: relative;
+      margin: auto;
+      width: 1241px;
+      height: 520px;
+      overflow: hidden;
+    }
+  
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+  
+  .text {
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 15px;
+    left: 0;
+    right: 0;
+    bottom: 78px;
+    width: 100%;
+    text-align: center;
+  }
+  
+    .dot-container {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      transition: background-color 0.6s ease;
+      bottom: 45px;
+    }
+  
+    .active {
+      background-color: #717171;
+    }
+  
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px;
+      }
+    }
+  </style>
+  
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="keyboard_backlight_purple_212155_6000x4000.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="20512813.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="3382865257_7dedef23b0_o.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+    </div>
+  
+    <div class="dot-container">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  
+    <script>
+      let slideIndex = 0;
+      showSlides();
+  
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+  
+</body>
+</html>
+
+  

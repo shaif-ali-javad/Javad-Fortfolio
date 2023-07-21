@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    min-height: 200vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header ul li a.about::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+header ul li .effect::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+header ul li a:hover::after {
+    width: 50%;
+}
+ 
+header.sticky ul li a {
+    color: #011032;
+}
+    
+header.sticky ul li a.about::after,
+header.sticky ul li a.effect::after {
+    background: #011032;
+}
+
+.mySlides {
+    display: none;
+}
+ 
+.head-lin {
+    border-bottom: 7px solid #fff;
+    position: absolute;
+    color: #fff;
+    top: 45%;
+    left: 5%;
+    font-size: 100px;
+}
+ 
+.head-line {
+    position: absolute;
+    color: #fff;
+    top: 65%;
+    left: 5%;
+    font-size: 40px;
+}
+ 
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+    width: 1349px;
+    height: 630px;
+    overflow: hidden;
+    background-color: #000;
+}
+ 
+.numbertext {
+    background-color: #000000aa;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+ 
+.dot-container {
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    text-align: center;
+}
+ 
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #b3b3b3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.6s ease;
+    bottom: 45px;
+}
+ 
+.active {
+    background-color: #ffffff;
+}
+ 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+ 
+@keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+ 
+    to {
+       opacity: 1;
+    }
+}
+ 
+@media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px;
+    }
+}
+ 
+
+/*
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(image/keyboard_backlight_red_136083_6000x4000.jpg);
+    background-size: cover;
+}
+    
+.banner .head-line {
+    position: relative;
+    color: #fff;
+}
+    
+.banner h1 {
+    font-size: 80px;
+    border-bottom: 9px solid white;  
+    width: 500px;
+    top: 230px;
+    margin-left: 100px;
+}
+    
+.banner p {
+    font-size: 30px;
+    margin-top: 30px;   
+    top: 220px;
+    margin-left: 100px;
+}
+*/
+    
+.course {
+    margin: auto;
+    text-align: justify;
+    color: #011032;
+    margin-top: 100px;
+}
+
+.course .heading {
+    text-align: center;
+}
+
+.course .heading h1{ 
+    font-size: 20px;
+    margin-top: -50px;
+}
+
+.course .text {
+    width: 80%;
+}
+
+.course p {
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    word-spacing: 2px;
+    color: #011032;
+    word-spacing: -2px;
+    margin: 50px 0;
+}
+
+.course img {
+    float: left;
+    height: 350px;
+}
+
+.mv {
+    margin: 0 150px;
+    width: 700px;
+}
+
+.mission, .vision {
+    position: relative;
+    color: #011032;
+    padding-bottom: 10px;
+    margin: 50px 0;
+}
+
+.mission h1, .vision h1 {
+    padding-bottom: 10px;
+    color: hsl(338, 81%, 60%);
+}
+
+.mission p, .vision p {
+    width: 80%;
+    text-align: justify;
+    top: 80px;;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ef4323;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+.end {
+    width: 100%;    
+    background-color: #011032;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.icons i {
+    position: relative;
+    margin-top: 10px;
+    margin: 5px 5px;
+    color: #fff;
+}
+
+.end p {
+    color: #fff;
+    position: relative;
+}
+
+.su {
+    color: #fff;
+    position: relative;
+    font-size: 7px;
+    text-align: left;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    z-index: 3;
+}
+/*          
