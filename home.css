@@ -194,7 +194,7 @@ nav .fa {
    line-height: 2rem;
    transition: 0.3s;
    margin: 10rem;
-   height: 25rem;
+   height: 100%;
 }
 
 .hero-section .gallery:hover {
