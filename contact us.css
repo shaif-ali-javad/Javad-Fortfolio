@@ -136,11 +136,13 @@ body {
 .contact-container {
     position: relative;
     color: #011032;
+    margin-top: 10rem;
 }
 
 .contact-container h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 5rem;
+    margin-bottom: 5rem;
 }
 
 .contact-container .contact {
