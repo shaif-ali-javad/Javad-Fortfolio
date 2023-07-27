@@ -457,6 +457,12 @@ nav .fa {
    padding-top: 30px;
 }
 
+@media screen and (max-width: 991px) {
+   .mx-auto p {
+      justify-content: center;
+   }
+}
+
 .text p {
    margin: 0px 0px 20px;
    font-size: 17px;
