@@ -1,198 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background-color: white;
-    min-height: 200vh;
+   background-color: #fff;
+   color: #011032;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 40px 100px;
-    z-index: 100000;
+.header {
+   background-color: #00000000;
+   transition: 500ms;
+   max-width: 100%;
+   padding: 4rem 2rem;
+   transition:padding 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
-header.sticky {
-    padding: 5px 100px;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.header.sticky {
+   background-color: #ffffff;
+   transition:padding 500ms ease-in-out, background-color 500ms ease-in-out;
+   padding: .4rem 2rem;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
+.header img {
+   width: 7rem;
 }
 
-header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header .navbar button{
+   outline:none ;
+   transition: 1s;
 }
 
-header ul li {
-    position: relative;
-    list-style: none;
+.header .navbar button:active{
+   transition: 500ms;
+   background-color: #00000065;
 }
 
-header ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
+.header.sticky .navbar button:active{
+   transition: 500ms;
+   background-color: #000000bf;
 }
 
-header ul li a.Contact::after {
-    content: '';
-    width: 50%;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    transition: width 0.3s;
+.header.sticky .navbar button{
+   outline: .2rem solid rgba(33, 33, 33, 0.036) ;
 }
 
-header ul li .effect::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    transition: width 0.3s;
+.header .navbar-nav button .navbar-toggler-icon {
+   color: #fff;
 }
 
-header ul li a:hover::after {
-    width: 50%;
+.header .navbar-nav li {
+   padding: 0 1rem;
 }
 
-.mySlides {
-    display: none;
-}
- 
-.slideshow-container {
-    max-width: 1400px;
-    position: relative;
-    margin: auto;
-    width: 1349px;
-    height: 630px;
-    overflow: hidden;
-    background-color: #000;
-}
- 
-.numbertext {
-    background-color: #000000aa;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
- 
-.dot-container {
-    position: absolute;
-    bottom: -35px;
-    width: 100%;
-    text-align: center;
-}
- 
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #b3b3b3;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    transition: background-color 0.6s ease;
-    bottom: 45px;
-}
- 
-.active {
-    background-color: #ffffff;
-}
- 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
- 
-@keyframes fade {
-    from {
-      opacity: 0.4;
-    }
- 
-    to {
-       opacity: 1;
-    }
-}
- 
-@media only screen and (max-width: 300px) {
-    .text {
-      font-size: 11px;
-    }
+.header .navbar-nav .active {
+   background-color: #ef4323;
+   border-radius: 3rem;
 }
 
-/*
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(image/keyboard_backlight_purple_212155_6000x4000.jpg);
-    background-size: cover;
+.header.sticky .navbar-nav .active {
+   background-color: #ef4323;
 }
 
-.banner .head-line {
-    position: relative;
-    top: 250px;
-    left: 100px;
+.header .navbar-nav li {
+   transition: border-radius 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+
+ .header .navbar-nav li:hover {
+   background-color: #ef4323;
+   border-radius: 3rem;
+}
+
+.header .navbar-nav .active a {
+   color: #fff;
+}
+
+.header.sticky .navbar-nav .active a {
     color: #fff;
 }
 
-.banner h1 {
-    font-size: 80px;
+.header.sticky .navbar-nav li a {
+   transition: color 500ms ease-in-out;
 }
 
-.banner p {
-    font-size: 30px;
-}
-*/
-
-header.sticky ul li a {
-    color: #011032;
+.header .navbar-nav li a {
+    color: #ffffff;
 }
 
-header.sticky ul li a.Contact::after,
-header.sticky ul li a.effect::after {
-    background: #011032;
+.header.sticky .navbar-nav li a {
+   color: #011032;
 }
+
+.header .navbar-nav li:hover a {
+   color: #fff;
+}
+
+@media (max-width: 1199px) {
+   .header {
+     display: none;
+   }
+}
+
+/* Make the image fully responsive */
+.carousel-inner {
+   max-height: 100vh;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #01103266; /* Adjust the opacity as needed */
+}
+
+
 
 .map {
     width: 100%;
@@ -203,9 +131,10 @@ header.sticky ul li a.effect::after {
     flex-direction: column;
 }
 
+
+
 .contact-container {
     position: relative;
-    margin: 200px 100px;
     color: #011032;
 }
 
@@ -215,11 +144,7 @@ header.sticky ul li a.effect::after {
 }
 
 .contact-container .contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
-    text-align: center;
-    gap: 2rem 2rem;
+
 }
 
 .contact-container .contact .contact-content {
@@ -245,7 +170,7 @@ header.sticky ul li a.effect::after {
 }
 
 .contact-container .contact .contact-content p {
-    margin-bottom: 
+    
 }
 
 .contact-container .contact .contact-content p strong {
@@ -267,21 +192,21 @@ header.sticky ul li a.effect::after {
     z-index: 100;
 }
 
-.container {
+.container0 {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- .container h3 {
-     color: #fff;
-     font-weight: 800;
-     margin-bottom: 20px;
-    }
+.container0 h3 {
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
     
-    form {
+form {
     background: #333;
     display: flex;
     flex-direction: column;
@@ -312,23 +237,6 @@ form button {
     margin: 20px auto 0;
     border-radius: 30px;
 
-}
-
-.end {
-    width: 100%;
-    background-color: #011032;
-    text-align: center;
-    justify-content: center;
-}
-
-.icons {
-    padding: 10px 0 20px;
-}
-
-.icons i {
-    position: relative;
-    margin: 5px;
-    color: #fff;
 }
 
 #myBtn {
