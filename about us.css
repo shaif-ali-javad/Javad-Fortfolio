@@ -202,43 +202,13 @@ body {
       font-size: 11px;
     }
 }
- 
 
-/*
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(image/keyboard_backlight_red_136083_6000x4000.jpg);
-    background-size: cover;
-}
-    
-.banner .head-line {
-    position: relative;
-    color: #fff;
-}
-    
-.banner h1 {
-    font-size: 80px;
-    border-bottom: 9px solid white;  
-    width: 500px;
-    top: 230px;
-    margin-left: 100px;
-}
-    
-.banner p {
-    font-size: 30px;
-    margin-top: 30px;   
-    top: 220px;
-    margin-left: 100px;
-}
-*/
-    
+
+
 .course {
-    margin: auto;
+    margin: 15rem 0 0;
     text-align: justify;
     color: #011032;
-    margin-top: 100px;
 }
 
 .course .heading {
@@ -246,28 +216,27 @@ body {
 }
 
 .course .heading h1{ 
-    font-size: 20px;
-    margin-top: -50px;
+    font-size: 2rem;
 }
 
 .course .text {
-    width: 80%;
+    margin-top: 5rem;
+    width: 100%;
 }
 
 .course p {
     position: relative;
     width: 100%;
     font-size: 20px;
-    word-spacing: 2px;
     color: #011032;
     word-spacing: -2px;
-    margin: 50px 0;
 }
 
 .course img {
-    float: left;
-    height: 350px;
+    height: 22rem;
 }
+
+
 
 .mv {
     margin: 0 150px;
