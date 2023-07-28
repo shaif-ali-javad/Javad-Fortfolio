@@ -453,14 +453,7 @@ nav .fa {
 
 
 .text {
-   text-align: center;
    padding-top: 30px;
-}
-
-@media screen and (max-width: 991px) {
-   .mx-auto p {
-      justify-content: center;
-   }
 }
 
 .text p {
