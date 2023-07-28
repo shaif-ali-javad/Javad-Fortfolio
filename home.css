@@ -456,11 +456,21 @@ nav .fa {
    padding-top: 30px;
 }
 
+.text h1 {
+   font-size: 5rem;
+}
+
+.text .border-0 {
+   background-color: #149ddd;
+   height: .5rem;
+   width: 17%;
+   margin-bottom: 2rem;
+}
+
 .text p {
    margin: 0px 0px 20px;
    font-size: 17px;
 }
-
 .some-text {
    display: block;
    margin: 10px 0px 40px;
