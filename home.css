@@ -475,11 +475,9 @@ nav .fa {
    display: block;
    margin: 10px 0px 40px;
    font-size: 16px;
-   text-align: center;
 }
 
 .text-a {
-   text-align: center;
    padding-top: 30px;
    flex-direction: column;
 }
