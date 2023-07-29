@@ -162,12 +162,12 @@ body {
 
 .contact-container .contact .content1 img {
     margin: -9px 0px 13px;
-    height: 115px;
-    width: 115px;
+    height: 5rem;
+    width: 5rem;
 }
 
 .contact-container .contact img {
-    height: 100px;
+    height: 5rem;
     margin-bottom: 20px;
 }
 
