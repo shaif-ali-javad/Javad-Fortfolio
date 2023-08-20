@@ -106,11 +106,13 @@ body {
    }
 }
 
+.banner p {
+    font-size: 30px;
+}
+*/
 
-
-/* Make the image fully responsive */
-.carousel-inner {
-   max-height: 100vh;
+header.sticky ul li a {
+    color: #011032;
 }
 
 .overlay {
