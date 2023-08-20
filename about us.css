@@ -1,109 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: white;
-    min-height: 200vh;
+   background-color: #fff;
+   color: #011032;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 40px 100px;
-    z-index: 1;
+.header {
+   background-color: #00000000;
+   transition: 500ms;
+   max-width: 100%;
+   padding: 4rem 2rem;
+   transition:padding 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
-header.sticky {
-    padding: 5px 100px;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.header.sticky {
+   background-color: #ffffff;
+   transition:padding 500ms ease-in-out, background-color 500ms ease-in-out;
+   padding: .4rem 2rem;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-    position: relative;
-    font-weight: 700;
+.header img {
+   width: 7rem;
+}
+
+.header .navbar button{
+   outline:none ;
+   transition: 1s;
+}
+
+.header .navbar button:active{
+   transition: 500ms;
+   background-color: #00000065;
+}
+
+.header.sticky .navbar button:active{
+   transition: 500ms;
+   background-color: #000000bf;
+}
+
+.header.sticky .navbar button{
+   outline: .2rem solid rgba(33, 33, 33, 0.036) ;
+}
+
+.header .navbar-nav button .navbar-toggler-icon {
+   color: #fff;
+}
+
+.header .navbar-nav li {
+   padding: 0 1rem;
+}
+
+.header .navbar-nav .active {
+   background-color: #ef4323;
+   border-radius: 3rem;
+}
+
+.header.sticky .navbar-nav .active {
+   background-color: #ef4323;
+}
+
+.header .navbar-nav li {
+   transition: border-radius 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+
+ .header .navbar-nav li:hover {
+   background-color: #ef4323;
+   border-radius: 3rem;
+}
+
+.header .navbar-nav .active a {
+   color: #fff;
+}
+
+.header.sticky .navbar-nav .active a {
     color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
 }
 
-header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header.sticky .navbar-nav li a {
+   transition: color 500ms ease-in-out;
 }
 
-header ul li {
-    position: relative;
-    list-style: none;
+.header .navbar-nav li a {
+    color: #ffffff;
 }
 
-header ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.6s;
+.header.sticky .navbar-nav li a {
+   color: #011032;
 }
 
-header ul li a.about::after {
-    content: '';
-    width: 50%;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    transition: width 0.3s;
+.header .navbar-nav li:hover a {
+   color: #fff;
 }
 
-header ul li .effect::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    transition: width 0.3s;
+@media (max-width: 1199px) {
+   .header {
+     display: none;
+   }
 }
 
-header ul li a:hover::after {
-    width: 50%;
-}
- 
-header.sticky ul li a {
-    color: #011032;
-}
-    
-header.sticky ul li a.about::after,
-header.sticky ul li a.effect::after {
-    background: #011032;
+
+
+/* Make the image fully responsive */
+.carousel-inner {
+   max-height: 100vh;
 }
 
-.mySlides {
-    display: none;
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #01103266; /* Adjust the opacity as needed */
 }
  
 .head-lin {
@@ -188,41 +204,10 @@ header.sticky ul li a.effect::after {
 }
  
 
-/*
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(image/keyboard_backlight_red_136083_6000x4000.jpg);
-    background-size: cover;
-}
-    
-.banner .head-line {
-    position: relative;
-    color: #fff;
-}
-    
-.banner h1 {
-    font-size: 80px;
-    border-bottom: 9px solid white;  
-    width: 500px;
-    top: 230px;
-    margin-left: 100px;
-}
-    
-.banner p {
-    font-size: 30px;
-    margin-top: 30px;   
-    top: 220px;
-    margin-left: 100px;
-}
-*/
     
 .course {
-    margin: auto;
-    text-align: justify;
+    margin: 15rem 0 0;
     color: #011032;
-    margin-top: 100px;
 }
 
 .course .heading {
@@ -230,39 +215,33 @@ header.sticky ul li a.effect::after {
 }
 
 .course .heading h1{ 
-    font-size: 20px;
-    margin-top: -50px;
+    font-size: 2rem;
 }
 
 .course .text {
-    width: 80%;
+    margin-top: 5rem;
+    width: 100%;
 }
 
 .course p {
     position: relative;
     width: 100%;
     font-size: 20px;
-    word-spacing: 2px;
     color: #011032;
-    word-spacing: -2px;
-    margin: 50px 0;
 }
 
 .course img {
-    float: left;
-    height: 350px;
+    height: 22rem;
 }
 
-.mv {
-    margin: 0 150px;
-    width: 700px;
-}
+
+
 
 .mission, .vision {
     position: relative;
     color: #011032;
     padding-bottom: 10px;
-    margin: 50px 0;
+    margin-left: 1rem;
 }
 
 .mission h1, .vision h1 {
@@ -272,11 +251,12 @@ header.sticky ul li a.effect::after {
 
 .mission p, .vision p {
     width: 80%;
-    text-align: justify;
+    text-align: left;
     top: 80px;;
     font-size: 18px;
-    word-spacing: 2px;
 }
+
+
 
 #myBtn {
     display: none;
@@ -299,25 +279,7 @@ header.sticky ul li a.effect::after {
     background-color: #555;
 }
 
-.end {
-    width: 100%;    
-    background-color: #011032;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-}
 
-.icons i {
-    position: relative;
-    margin-top: 10px;
-    margin: 5px 5px;
-    color: #fff;
-}
-
-.end p {
-    color: #fff;
-    position: relative;
-}
 
 .su {
     color: #fff;
@@ -325,6 +287,8 @@ header.sticky ul li a.effect::after {
     font-size: 7px;
     text-align: left;
 }
+
+
 
 .whatsapp {
     position: fixed;
