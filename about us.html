@@ -319,140 +319,116 @@
               elit.
             </p>
           </div>
-          //-- Grid column --//
+        </section>
+        <section class="mv">
+            <div class="mission">
+                <h1>Mission</h1>
+                <p>Our mission is to offer complete and innovative IT solutions and services to 
+                    the clients in order for them to achieve their business objectives, become 
+                    their trusted partner and to keep up with a continuing evolving world.
+                </p>
+            </div>
+            <div class="vision">
+                <h1>Vision</h1>
+                <p>Our Vision is to help our customers to get the most out of the available 
+                    technologies and solutions enabling them to achieve their desired business 
+                    goals. Our Services Technology Services Web Services Design & Implement 
+                    Premises Wiring (SCN) Design & Implement Active Network Unified Communication 
+                    & Collaboration Wireless LAN, PTP & Microwave Solution CCTV & IP Networked 
+                    Security System Network Security
+                    </p>
+            </div>
+        </section>
+        <div class="whatsapp">   
+            <a href="https://wa.me/971504153141">
+                <img id="whatsapp" height="40px" src="image/WhatsApp-logo.png" alt="">
+            </a>
+        </div>
 
-          
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+        </button>
 
-          //-- Grid column --//
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            //-- Links --//
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-white">Your Account</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Become an Affiliate</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Shipping Rates</a>
-            </p>
+        <div class="end">
+            <div>
+                <div class="su">
+                <h1>24×7 SERVICE & SUPPORT IN UAE</h1>
+                </div>
+            </div>
+
             <p>
               <a href="#!" class="text-white">Help</a>
             </p>
-          </div>
-          <!-- Grid column -->
-
-
-          </div>
-
-
-          <!-- Grid row -->
-
-
-
-          <!-- Grid column -->
-          <div class="mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr class="mb-4 mt-0 d-inline-block " style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <div class="row">
-
-              <p class="d-flex col-12 col-lg-4"><i class="fas fa-phone mr-3"></i>+971 50 415 3141</p>
-              <p class="d-flex col-12 col-lg-4"><i class="fas fa-envelope mr-3"></i> info@onetechae.com</p>
-              <p class="d-flex col-12 col-lg-4"><i class="fas fa-home mr-3"></i> G11, Madina Mall, Muhaisnah 4, P.O Box:
-                120735 Dubai-UAE</p>
+            <div class="icons">
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
             </div>
-          </div>
-          <!-- Grid column -->
         </div>
-      </section>
-      <!-- Section: Links  -->
+        <script>
+            let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {
+              scrollFunction();
+              scrollFunctio();
+          };
+          
+          function scrollFunction() {
+              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
 
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 1990 Copyright:
-        <a class="text-white" href="#!">onetechuae.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+              let whatsapp = document.getElementById("whatsapp");
 
-  </div>
-  <!-- End of .container -->
-
-
-
-<script>
-  // Get the button
-  let mybutton = document.getElementById("myBtn");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
-    scrollFunctio();
-  };
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
-  let whatsapp = document.getElementById("whatsapp");
-
-  function scrollFunctio() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      whatsapp.style.display = "block";
-    } else {
-      whatsapp.style.display = "none";
-    }
-  }   
-</script>
-
-<script type="text/javascript">
-  window.addEventListener("scroll", function () {
-    var header = document.getElementById("header2");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
-</script>
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
+              function scrollFunctio() {
+                  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                  whatsapp.style.display = "block";
+              } else {
+                  whatsapp.style.display = "none";
+              }
+              }   
+          </script>
+                
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
 </body>
 </html>
