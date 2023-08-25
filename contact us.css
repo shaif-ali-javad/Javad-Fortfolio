@@ -110,7 +110,7 @@ body {
 
 /* Make the image fully responsive */
 .carousel-inner {
-   max-height: 100vh;
+    max-height: 25rem;
 }
 
 .overlay {

@@ -123,7 +123,8 @@ body {
 .line {
    text-align: center;
    position: relative;
-   margin-top: 200px;
+   margin-top: 10rem;
+   margin-bottom: 10rem;
    color: #011032;
    text-align: center;
 }
