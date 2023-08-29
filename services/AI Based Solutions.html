@@ -1,10 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Office Automation.css">
+    <link rel="stylesheet" href="services list.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
 </head>
 <body>
     <header class="nav-links" id="navLinks">
@@ -19,22 +126,237 @@
     </header>
     <section class="banner">
     </section>
-    <aside>
-        <ul>
-            <li>Office Automation</li>
-            <li>Software Solutions</li>
-            <li>AV Solutions</li>
-            <li>Structured Cabling</li>
-            <li>ELV Systems</li>
-            <li>Backup and Disaster Recovery Management</li>
-            <li>Home Automation</li>
-            <li>Cloud Services</li>
-            <li>Maintenance & Support</li>
-            <li>AI Based Solutions</li>
-            <li>Data Centre Solutions</li>
-            <li>Microsoft Azure / Office 365</li>
-        </ul>
-    </aside>
+
+
+
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>AI Based Solutions</h2>
+    <li><a href="Home Automation.html">Office Automation</a></li>
+    <li><a href="Software Solutions.html">Software Solutions</a></li>
+    <li><a href="AV Solutions.html">AV Solutions</a></li>
+    <li><a href="Structured Cabling.html">Structured Cabling</a></li>
+    <li><a href="ELV Systems.html">ELV Systems</a></li>
+    <li><a href="Backup and Disaster Recovery Management.html">Backup and Disaster Recovery Management</a></li>
+    <li><a href="Home Automation.html">Home Automation</a></li>
+    <li><a href="Cloud Services.html">Cloud Services</a></li>
+    <li><a href="Maintenance & Support.html">Maintenance & Support</a></li>
+    <li><a href="AI Based Solutions.html">AI Based Solutions</a></li>
+    <li><a href="Data Centre Solutions.html">Data Centre Solutions</a></li>
+    <li><a href="Microsoft Azure  Office 365.html">Microsoft Azure / Office 365</a></li>
+  </div>
+  <div class="main">
+    <h2>ARTIFICIAL INTELLIGENCE ENTERPRISE ARTIFICIAL INTELLIGENCE SOFTWARE</h2>
+    <h5>Use the immense computational capabilities of AI-based software to dramatically improve the bottom line of your business. Artificial Intelligence software solutions like machine learning models and artificial intelligence apps will help you automate the operations of any department, ensure fail-safe decision making with predictive models that analyse data and propose spot-on information, safeguard your business physically and digitally, and significantly increase the productivity of your employees by working alongside them.</h5>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+  </div>
+</div>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="">
+
+  <!-- Footer -->
+  <footer
+          class="text-lg-left text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+            class="d-flex justify-content-between p-4"
+            style="background-color: #7c4dff"
+            >
+      <!-- Left -->
+      <div class="text-left me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div class="row">
+        <a href="" class="col-2 text-white me-0">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="col-2 text-white me-0">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="col-2 text-white me-0">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="col-2 text-white me-0">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="col-2 text-white me-0">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="col-2 text-white me-0">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+    
+
+
+    <!-- Grid column -->
+        <!-- col-md-2 col-lg-2 col-xl-2 -->
+        <div class="mx-auto mt-5 container">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Services</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <div class="row">
+
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Office Automation</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Software Solutions</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">AV Solutions</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Structured Cabling</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">ELV Systems</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Home Automation</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Cloud Services</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Maintenance & Support</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">AI Based Solutions</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Data Centre Solutions</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Microsoft Azure / Office 365</a>
+            </p>
+            <p class="col-md-6 col-lg-4">
+              <a href="#!" class="text-white">Backup and Disaster Recovery Management</a>
+            </p>
+        </div>
+      </div>
+        <!-- Grid column -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container">
+        <!-- //-- Grid row --// -->
+        <div class="row">
+          <!-- //-- Grid column --// -->
+        <!--  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            //-- Content --//
+            <h6 class="text-uppercase fw-bold">onetech</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          //-- Grid column --//
+
+          
+
+          //-- Grid column --//
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            //-- Links --//
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          
+        </div>
+
+        
+        <!-- Grid row -->
+
+
+
+        <!-- Grid column -->
+        <div class="mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block "
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <div class="row">
+
+            <p class="d-flex col-12 col-lg-4"><i class="fas fa-phone mr-3"></i>+971 50 415 3141</p>
+            <p class="d-flex col-12 col-lg-4"><i class="fas fa-envelope mr-3"></i> sales@onetechuae.com</p>
+            <p class="d-flex col-12 col-lg-4"><i class="fas fa-home mr-3"></i> G11, Madina Mall, Muhaisnah 4, P.O Box: 120735 Dubai-UAE</p>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+      © 1990 Copyright:
+      <a class="text-white" href="#!"
+        >onetechuae.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</div>
+<!-- End of .container -->
+
+
+
     <script type="text/javascript">
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
