@@ -1,4 +1,200 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    background-color: #333;
+    max-width: 100%;
+    padding: 0rem 2rem 0 0rem;
+    transition: background-color 500ms ease-in-out;
+}
+  
+.header.sticky {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+    z-index: 1000; /* Adjust this based on your layout */
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition:top 500ms ease-in-out,position 500ms ease-in-out;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.header.sticky + .content {
+    padding-top: 60px;
+    transition:padding-top 500ms ease-in-out;
+}
+ 
+.header .logo {
+    background-color: white;
+}
+
+.header img {
+    width: 7rem;
+}
+ 
+.header .navbar button{
+    outline:none ;
+    transition: 1s;
+}
+ 
+.header .navbar button:active{
+    transition: 500ms;
+    background-color: #00000065;
+}
+ 
+.header.sticky .navbar button:active{
+    transition: 500ms;
+    background-color: #000000bf;
+}
+ 
+.header.sticky .navbar button{
+    outline: .2rem solid rgba(33, 33, 33, 0.036) ;
+}
+ 
+.header .navbar-nav button .navbar-toggler-icon {
+    color: #fff;
+}
+ 
+.header .navbar-nav li {
+    padding: 0 1rem;
+}
+ 
+.header .navbar-nav .active {
+    background-color: #ef4323;
+    border-radius: 3rem;
+}
+ 
+.header.sticky .navbar-nav .active {
+    background-color: #ef4323;
+}
+ 
+.header .navbar-nav li {
+    transition: border-radius 500ms ease-in-out, background-color 500ms ease-in-out;
+}
+ 
+.header .navbar-nav li:hover {
+    background-color: #ef4323;
+    border-radius: 3rem;
+}
+ 
+.header .navbar-nav .active a {
+    color: #fff;
+}
+ 
+.header.sticky .navbar-nav .active a {
+     color: #fff;
+}
+ 
+.header.sticky .navbar-nav li a {
+    transition: color 500ms ease-in-out;
+}
+ 
+.header .navbar-nav li a {
+     color: #ffffff;
+}
+ 
+.header.sticky .navbar-nav li a {
+    color: #011032;
+}
+ 
+.header .navbar-nav li:hover a {
+    color: #fff;
+}
+ 
+@media (max-width: 1199px) {
+    .header {
+        display: none;
+    }
+}
+ 
+ 
+ /* Make the image fully responsive */
+.carousel-inner {
+    max-height: 25rem;
+}
+ 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #01103266; /* Adjust the opacity as needed */
+}
+
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+/* .navbar {
+  overflow: hidden;
+  background-color: #333;
+} */
+
+/* Column container */
+.row-0 {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side-0 {
+    -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main-0 {   
+    -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row-0 {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
 
 
 .side li {
@@ -13,5 +209,12 @@
 }
 
 .main h5{
-    line-height: 1.3rem;
+    line-height: 1.4rem;
+}
+
+
+
+.row-0 {
+    width: 100%;
+    padding-left: 1rem;
 }
