@@ -331,7 +331,7 @@ nav .fa {
 }
 
 .holder1 .heading1 h2 {
-   font-size: 50px;
+   font-size: 5rem;
    margin-bottom: 20px;
 }
 .holder1 .container1 {
@@ -357,6 +357,7 @@ nav .fa {
 .holder1 .container1 .box-0,
 .holder1 .container1 .box-2 {
    border-radius: 2rem 10rem;
+   margin-top: 1rem;
 }
 
 .holder1 .container1 .box-1::before {
@@ -377,10 +378,20 @@ nav .fa {
    z-index: -3;
    color: #fff;
    border-radius: 10rem 2rem;
+   margin-top: 1rem;
+}
+
+.holder1 .container1 .box-0 .h,
+.holder1 .container1 .box-2 .h {
+   color: #777;
+}
+
+.holder1 .container1 .box-1 .h {
+   color: #fff;
 }
 
 .holder1 .container1 h3 {
-   font-size: 35px;
+   font-size: 2rem;
 }
 
 .holder1 .container1 h4 {
@@ -447,14 +458,25 @@ nav .fa {
    margin-left: 7px;
 }
 .holder1 .container1 .benifits .svg-1 p {
-   margin-left: 7px;
-   
+   margin-left: 7px;  
 }
 
+@media screen and (max-width: 575px) {
 
+   .holder1 .container1 .box-0, 
+   .holder1 .container1 .box-1, 
+   .holder1 .container1 .box-2 {
+      width: 27rem;
+   }
+   .holder1 .container1 .benifits {
+      
+   }
+
+
+}
 
 .text {
-   padding-top: 30px;
+   padding: 2rem;
 }
 
 .text h1 {
