@@ -1,0 +1,59 @@
+
+body {
+    background-image: url(keyboard_backlight_red_136083_6000x4000.jpg);
+    background-size: cover;
+}
+
+form {
+    background-color: rgba(10, 10, 10, 0.6);
+    width: 400px;
+    height: 450px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+input[name="name"], input[name="email"], input[name="website"] {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    outline: 1px solid red;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    outline: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: #cd0909;
+}
+
+input[type="radio"] + label {
+    color: #ffffff;
+}
+
+textarea {
+    margin: 20px 0 10px;
+    width: 100%;
+    outline:1px solid red;
+    border-radius: 5px;
+}
+
+
+
+/*
